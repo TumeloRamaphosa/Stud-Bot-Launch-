@@ -1,0 +1,87 @@
+{
+  "campaign": "stud-bot-launch",
+  "sender": {
+    "inbox": "sales@studex-group.com",
+    "from_name": "Katjana · Studex Super Agents",
+    "reply_to": "sales@studex-group.com"
+  },
+  "compliance": {
+    "unsubscribe_footer": "Reply STOP to unsubscribe. Studex Group (Pty) Ltd, FNB Woodmead, Johannesburg, ZA.",
+    "physical_address": "Studex Group (Pty) Ltd, Woodmead, Johannesburg, South Africa",
+    "popia": "consent tracked in DenchClaw CRM"
+  },
+  "audience": {
+    "source": "apify_google_maps_scrape",
+    "batch_size": 200,
+    "notes": "Round 1 target: SA SMBs — restaurants, retail, salons, tutoring in Sandton, CT, Durban, Pretoria",
+    "personalization_fields": ["first_name", "business_name", "industry", "city"]
+  },
+  "rate_limits": {
+    "max_per_day_sender": 200,
+    "sender_warmup_days": 14,
+    "scale_after_warmup": 1000
+  },
+  "sequence": [
+    {
+      "email_id": "sb-email-01-intro",
+      "day": 0,
+      "subject": "Stud-Bot: an AI agent + biltong + doors on 3 continents",
+      "body_file": "copy/email-cold-outreach.md#email-1--day-0-introduction",
+      "cta": "Reply STUD-BOT"
+    },
+    {
+      "email_id": "sb-email-02-case-study",
+      "day": 2,
+      "subject": "This {industry} in {city} cut response time from 6 hours to 30 seconds",
+      "body_file": "copy/email-cold-outreach.md#email-2--day-2-case-study",
+      "cta": "Reply DEMO",
+      "skip_if_replied": true
+    },
+    {
+      "email_id": "sb-email-03-math",
+      "day": 4,
+      "subject": "Your staff costs R15,000/mo. Stud-Bot costs R2,599.",
+      "body_file": "copy/email-cold-outreach.md#email-3--day-4-cost-comparison",
+      "cta": "Reply STUD-BOT",
+      "skip_if_replied": true
+    },
+    {
+      "email_id": "sb-email-04-objection",
+      "day": 7,
+      "subject": "\"AI can't replace humans\" — you're right",
+      "body_file": "copy/email-cold-outreach.md#email-4--day-7-objection-handling",
+      "cta": "Reply AGENT",
+      "skip_if_replied": true
+    },
+    {
+      "email_id": "sb-email-05-urgency",
+      "day": 10,
+      "subject": "Last 43 founding-member slots — locked at R2,599",
+      "body_file": "copy/email-cold-outreach.md#email-5--day-10-urgency",
+      "cta": "Reply LOCK",
+      "skip_if_replied": true
+    }
+  ],
+  "reply_routing": {
+    "primary_agent": "Hermes",
+    "escalation_agent": "Katjana",
+    "escalation_triggers": ["intent_score > 0.7", "keyword: STUD-BOT", "keyword: LOCK", "keyword: DEMO", "keyword: buy", "keyword: pricing"],
+    "crm_sync": "DenchClaw"
+  },
+  "invoicing": {
+    "agent": "CashClaw",
+    "amount_zar": 2599,
+    "reference_pattern": "STUD-BOT-{client_id}",
+    "bank": {
+      "bank": "FNB Business",
+      "account_name": "Studex Group",
+      "account_number": "62760837610",
+      "branch": "250-655 Woodmead"
+    }
+  },
+  "approval_gate": {
+    "required": true,
+    "approver": "CEO (Tumelo)",
+    "trigger_word": "APPROVE COPY + LAUNCH 200"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "campaign": "stud-bot-launch",
+  "created_at": "2026-09-08",
+  "notes": "Payloads for scheduling Stud-Bot launch content across platforms via Blotato API. Endpoint: POST https://api.blotato.com/v1/posts. Auth: Bearer BLOTATO_API_KEY.",
+  "posts": [
+    {
+      "id": "sb-tw-01-hook",
+      "platform": "x",
+      "scheduled_at": "2026-09-08T18:00:00+02:00",
+      "content": "introducing stud-bot\n\nR2,599/month:\n- ai agent on whatsapp (24/7)\n- 1kg wagyu biltong delivered monthly\n- global markets network access\n\nthe only ai subscription that ships you meat",
+      "media": [],
+      "hashtags": []
+    },
+    {
+      "id": "sb-li-01",
+      "platform": "linkedin",
+      "scheduled_at": "2026-09-08T18:00:00+02:00",
+      "content_file": "copy/social-linkedin.md",
+      "media": ["assets/hero-biltong-whatsapp.jpg"],
+      "hashtags": ["#SouthAfricanBusiness", "#AIforBusiness", "#WhatsAppBusiness", "#SME", "#StudexGroup"]
+    },
+    {
+      "id": "sb-fb-01-organic",
+      "platform": "facebook",
+      "scheduled_at": "2026-09-08T19:00:00+02:00",
+      "content_file": "copy/social-facebook.md",
+      "media": ["assets/hero-biltong-whatsapp.jpg"],
+      "hashtags": ["#StudexSuperAgents", "#StudBot", "#AIAgent", "#SMEsa", "#WagyuBiltong"]
+    },
+    {
+      "id": "sb-ig-01-carousel",
+      "platform": "instagram",
+      "scheduled_at": "2026-09-08T19:00:00+02:00",
+      "content_file": "copy/social-instagram-carousel.md",
+      "media": [
+        "assets/carousel-slide-1-hook.jpg",
+        "assets/carousel-slide-2-product.jpg",
+        "assets/carousel-slide-3-whatsapp.jpg",
+        "assets/carousel-slide-4-biltong.jpg",
+        "assets/carousel-slide-5-map-cta.jpg"
+      ],
+      "hashtags": ["#StudBot", "#StudexSuperAgents", "#AIAgent", "#WhatsAppBusiness", "#Wagyu", "#Halal"]
+    },
+    {
+      "id": "sb-ig-02-stories-teaser",
+      "platform": "instagram_stories",
+      "scheduled_at": "2026-09-08T20:00:00+02:00",
+      "content": "Stud-Bot drops tomorrow. R2,599/mo. AI + biltong + global network.",
+      "media": ["assets/carousel-slide-1-hook.jpg", "assets/carousel-slide-2-product.jpg"],
+      "hashtags": []
+    },
+    {
+      "id": "sb-reel-01-emily",
+      "platform": "instagram_reels",
+      "scheduled_at": "2026-09-09T07:00:00+02:00",
+      "content": "The only AI subscription that ships you meat. R2,599/mo. Deploy in 48hrs. WhatsApp +27 79 498 8737",
+      "media": ["assets/emily-30sec.mp4"],
+      "hashtags": ["#StudBot", "#AIAgent", "#WagyuBiltong", "#SMEsa"]
+    },
+    {
+      "id": "sb-tiktok-01-emily",
+      "platform": "tiktok",
+      "scheduled_at": "2026-09-09T07:00:00+02:00",
+      "content": "They're bribing me with meat. It's working. Stud-Bot R2,599/mo. WhatsApp +27 79 498 8737",
+      "media": ["assets/emily-30sec.mp4"],
+      "hashtags": ["#StudBot", "#SouthAfricanBusiness", "#AIAgent", "#Wagyu"]
+    },
+    {
+      "id": "sb-yt-shorts-01",
+      "platform": "youtube",
+      "scheduled_at": "2026-09-09T07:00:00+02:00",
+      "content": "Stud-Bot: R2,599/mo AI agent + Wagyu biltong + Global Markets access. Deploy in 48hrs.",
+      "media": ["assets/emily-30sec.mp4"],
+      "hashtags": ["#Shorts", "#StudBot", "#AIforBusiness"]
+    }
+  ],
+  "daily_rotation": {
+    "notes": "After launch day, rotate one organic post per day for 14 days across platforms",
+    "start_date": "2026-09-10",
+    "duration_days": 14,
+    "cadence": "18:00 SAST",
+    "content_pool": [
+      "copy/social-facebook.md",
+      "copy/social-linkedin.md",
+      "copy/social-x-twitter.md",
+      "copy/social-instagram-carousel.md"
+    ]
+  }
+}
