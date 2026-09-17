@@ -44,7 +44,7 @@ fulfillment/
 | **Deploy** | 48 hours |
 | **Sales channel** | WhatsApp +27 79 498 8737, sales@studex-group.com |
 | **Landing page** | https://app.base44.com/superagent/69ee5456163ccedcfd976e65 (update to Stud-Bot SKU pending) |
-| **Banking** | FNB Business \| Studex Group \| 62760837610 \| 250-655 Woodmead |
+| **Banking** | Not published. Payment details are issued per-invoice by CashClaw — never in this repo, campaign copy, or any public channel. |
 
 ## Target market (Round 1)
 
@@ -60,7 +60,7 @@ fulfillment/
 | Katjana | Head of Customer Sales, campaign owner |
 | Naledi | CMO, content generation + publishing |
 | DenchClaw | CRM, email outreach execution |
-| CashClaw | Invoicing + payment tracking (FNB) |
+| CashClaw | Invoicing + payment tracking |
 | Hermes | WhatsApp multi-platform sales |
 | Robusca Prime | Campaign oversight |
 
@@ -70,6 +70,18 @@ fulfillment/
 - CAN-SPAM compliant: clear sender, opt-out
 - No purchased lists — all leads from public scraping or organic inbound
 - SES warmup: max 200 emails/day sender for first 14 days
+- **No banking, payment, or credential material in this repository** — see Security below
+
+## Security
+
+This is a public repository. Never commit:
+
+- Bank account or branch numbers
+- API keys, tokens, or webhook secrets
+- Customer personal data or scraped contact lists
+- Internal pricing floors or margin data
+
+Banking details were previously present in this README and have been removed. Because git history is public and permanent, treat any value that was ever committed here as disclosed, regardless of the current file contents.
 
 ## Status
 
