@@ -11,7 +11,7 @@ Also usable as TikTok slideshow.
 
 ### Slide 2 — The Product
 **Visual:** Studex obsidian-gold logo lockup with "STUD-BOT" underneath.
-**Text overlay:** `This is Stud-Bot. R2,599/month.`
+**Text overlay:** `This is Stud-Bot. {{STUDBOT_MONTHLY_PRICE}}/month.`
 
 ### Slide 3 — Benefit 1
 **Visual:** Phone showing WhatsApp with Stud-Bot handling 3 customer queries.
@@ -36,7 +36,7 @@ WhatsApp +27 79 498 8737
 ```
 Introducing Stud-Bot 🖤✨
 
-R2,599/month:
+{{STUDBOT_MONTHLY_PRICE}}/month:
 → AI agent on WhatsApp (24/7)
 → 1kg Studex Wagyu biltong delivered monthly
 → Studex Global Markets network access
@@ -49,7 +49,7 @@ WhatsApp +27 79 498 8737 to start.
 
 #StudexSuperAgents #StudBot #AIAgent #WhatsAppBusiness
 #SouthAfricanBusiness #Wagyu #WagyuBiltong #StudexMeat #SMB
-#Halal #GlobalMarkets #BRICSbusiness #AfricaAI
+#GlobalMarkets #BRICSbusiness #AfricaAI
 ```
 
 ## Best time to post

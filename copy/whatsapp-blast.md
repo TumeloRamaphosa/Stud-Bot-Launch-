@@ -11,7 +11,7 @@ Hi {name} 👋
 
 Studex just launched Stud-Bot.
 
-R2,599/month. You get:
+{{STUDBOT_MONTHLY_PRICE}}/month. You get:
 ✅ 1 AI agent on your WhatsApp (24/7)
 ✅ 1kg Studex Wagyu biltong every month
 ✅ Studex Global Markets access (SA/NG/EG/UAE/RU network)
@@ -33,7 +33,7 @@ Who handles your WhatsApp when you're closed?
 If the answer is "nobody" — you're losing sales. Every after-hours
 message = a lost customer.
 
-Stud-Bot handles them all. R2,599/mo. Plus 1kg Wagyu biltong every month.
+Stud-Bot handles them all. {{STUDBOT_MONTHLY_PRICE}}/mo. Plus 1kg Wagyu biltong every month.
 
 Reply "TRY" to see it work.
 ```
@@ -53,7 +53,7 @@ Just deployed Stud-Bot for a restaurant in Joburg. 7 days later:
 ✅ Owner freed up 21 hrs/week
 ✅ First biltong shipment arrived Day 5
 
-R2,599/mo. Deploy in 48h.
+{{STUDBOT_MONTHLY_PRICE}}/mo. Deploy in 48h.
 
 Reply "YES" to get yours.
 ```
@@ -68,7 +68,7 @@ Hi {name} 👋
 Last call. Founding-member pricing closes at 100 clients.
 57 signed up. 43 slots left.
 
-R2,599/mo locked for life. After 100 clients: R3,250.
+{{STUDBOT_MONTHLY_PRICE}}/mo locked for life. After 100 clients: {{STUDBOT_MONTHLY_PRICE}}.
 
 Includes: Stud-Bot on WhatsApp + 1kg Wagyu biltong monthly +
 Studex Global Markets access.

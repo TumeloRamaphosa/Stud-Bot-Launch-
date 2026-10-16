@@ -7,7 +7,7 @@ Look, we know AI subscriptions are boring.
 
 So we're doing this:
 
-R2,599/month gets you:
+{{STUDBOT_MONTHLY_PRICE}}/month gets you:
 ✅ A Stud-Bot AI agent on your WhatsApp (24/7)
 ✅ 1kg Studex Wagyu biltong shipped to your door every month
 ✅ Studex Global Markets access (SA / NG / EG / UAE / RU network)

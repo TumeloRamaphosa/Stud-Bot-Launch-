@@ -1,6 +1,6 @@
 # Stud-Bot — The Offer
 
-## R2,599/month
+## {{STUDBOT_MONTHLY_PRICE}}/month
 
 ### What you get
 
@@ -13,8 +13,6 @@
 
 **2. Studex Wagyu Biltong**
 - 1kg delivered to your door every month
-- Halaal-certified
-- Nelson Mandela Boxing Cup partner brand
 - Ships from studexmeat.com
 
 **3. Studex Global Markets Access**
@@ -22,25 +20,25 @@
   - South Africa
   - Nigeria
   - Egypt
-  - UAE (via Dubai Chambers relationship)
-  - Russia (via BRICS Youth Council)
+  - UAE
+  - Russia
 - Monthly opportunity digest
-- One warm intro per quarter guaranteed
+- Warm introductions, subject to fit and availability
 
 ### Positioning
 
 *"The only AI subscription that ships you meat and opens doors on 3 continents."*
 
-### Why R2,599
+### Why {{STUDBOT_MONTHLY_PRICE}}
 
 - Human employee: R15,000/month + UIF + pension + leave + training
-- Stud-Bot: R2,599/month, 168 hours/week, gets smarter every day
+- Stud-Bot: {{STUDBOT_MONTHLY_PRICE}}/month, 168 hours/week, gets smarter every day
 - Biltong included = you get a taste of the Studex Meat brand
 - Global Markets access = you get connections you can't buy from Anthropic
 
 ### Founding member cap
 
-First 100 clients only at R2,599. After that: R3,250/month.
+First 100 clients only at {{STUDBOT_MONTHLY_PRICE}}. After that: {{STUDBOT_MONTHLY_PRICE}}/month.
 
 ### How they buy
 
@@ -56,4 +54,3 @@ First 100 clients only at R2,599. After that: R3,250/month.
 
 ### Invoicing
 
-Katjana (CashClaw) sends R2,599 invoice on signup. Payment to FNB Business, Studex Group, 62760837610, branch 250-655 Woodmead. Reference: `STUD-BOT-{client_id}`.

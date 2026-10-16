@@ -5,7 +5,7 @@
 ```
 introducing stud-bot
 
-R2,599/month:
+{{STUDBOT_MONTHLY_PRICE}}/month:
 - ai agent on whatsapp (24/7)
 - 1kg wagyu biltong delivered monthly
 - global markets network access
@@ -19,7 +19,7 @@ the only ai subscription that ships you meat
 2/
 
 your competitor just hired a R15k/mo employee.
-you hired stud-bot for R2,599.
+you hired stud-bot for {{STUDBOT_MONTHLY_PRICE}}.
 
 stud-bot works 168hrs/week, remembers every customer,
 never asks for leave.
