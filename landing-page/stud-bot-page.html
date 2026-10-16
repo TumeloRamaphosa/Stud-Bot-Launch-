@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Stud-Bot — AI Agent + Wagyu Biltong + Global Markets · Studex Super Agents</title>
-<meta name="description" content="R2,599/month. AI agent on your WhatsApp, 1kg Studex Wagyu biltong delivered monthly, Studex Global Markets network access. Deploy in 48 hours." />
+<meta name="description" content="{{STUDBOT_MONTHLY_PRICE}}/month. AI agent on your WhatsApp, 1kg Studex Wagyu biltong delivered monthly, Studex Global Markets network access. Deploy in 48 hours." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -15,7 +15,7 @@
     --gold: #C9A84C;
     --gold-soft: #E8CE81;
     --ink: #E8E4D8;
-    --ink-dim: #918B7A;
+    --ink-dim: #A9A392; /* raised for WCAG AA contrast on #0A0A0A */
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
@@ -60,7 +60,7 @@
     font-family: 'Space Mono', monospace;
     color: var(--gold);
     letter-spacing: 0.3em;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 32px;
   }
@@ -178,7 +178,7 @@
   .vs-col .label {
     font-family: 'Space Mono', monospace;
     color: var(--ink-dim);
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -217,7 +217,7 @@
     display: block;
     margin-top: 32px;
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gold);
@@ -243,12 +243,16 @@
     padding: 40px 0;
     border-top: 1px solid rgba(201, 168, 76, 0.15);
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--ink-dim);
     text-align: center;
     letter-spacing: 0.1em;
   }
-  footer a { color: var(--gold); text-decoration: none; }
+  footer a { color: var(--gold); text-decoration: underline; }
+  a:focus-visible { outline: 3px solid var(--gold-soft); outline-offset: 3px; }
+  .skip-link { position: absolute; left: -9999px; top: 0; background: var(--gold); color: var(--obsidian); padding: 8px 16px; }
+  .skip-link:focus { left: 8px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
   @media (max-width: 780px) {
     h1 { font-size: 56px; }
     .price { font-size: 72px; }
@@ -256,21 +260,30 @@
     .vs-table { grid-template-columns: 1fr; gap: 32px; }
     .vs-divider { display: none; }
     .final-cta h2 { font-size: 48px; }
+    header { flex-wrap: wrap; gap: 16px; }
+    .cta-primary, .cta-secondary, .contact-btn { min-height: 44px; display: inline-flex; align-items: center; }
+  }
+  @media (max-width: 420px) {
+    h1 { font-size: 42px; }
+    .price { font-size: 56px; }
+    .cta-row a { width: 100%; justify-content: center; }
   }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="container">
   <header>
-    <div class="brand">STUDEX · SUPER AGENTS</div>
+    <div class="brand" aria-label="Studex Super Agents">STUDEX · SUPER AGENTS</div>
     <a class="contact-btn" href="https://wa.me/27794988737?text=STUD-BOT">WhatsApp Us</a>
   </header>
+  <main id="main">
 
   <section class="hero">
     <div class="kicker">Founding-member launch</div>
     <h1>An AI agent, a kilo of biltong, and a passport to <em>global markets</em>.</h1>
     <p class="subhead">The only AI subscription that ships you meat and opens doors on 3 continents.</p>
-    <div class="price">R2,599<sub>/ month</sub></div>
+    <div class="price">{{STUDBOT_MONTHLY_PRICE}}<sub>/ month</sub></div>
     <div class="cta-row">
       <a class="cta-primary" href="https://wa.me/27794988737?text=STUD-BOT">Reply "STUD-BOT" on WhatsApp</a>
       <a class="cta-secondary" href="mailto:sales@studex-group.com?subject=STUD-BOT">Email sales</a>
@@ -278,7 +291,7 @@
   </section>
 
   <section class="bundle">
-    <h2>What R2,599/month gets you</h2>
+    <h2>What {{STUDBOT_MONTHLY_PRICE}}/month gets you</h2>
     <div class="three-up">
       <div class="bundle-item">
         <div class="bundle-num">01</div>
@@ -288,12 +301,12 @@
       <div class="bundle-item">
         <div class="bundle-num">02</div>
         <h3>1kg Wagyu biltong monthly</h3>
-        <p>Studex Wagyu biltong shipped to your door every month. Halaal-certified. Nelson Mandela Boxing Cup partner brand. Because AI companies don't send you steak. We do.</p>
+        <p>Studex Wagyu biltong shipped to your door every month. Because AI companies don't send you steak. We do.</p>
       </div>
       <div class="bundle-item">
         <div class="bundle-num">03</div>
         <h3>Global Markets access</h3>
-        <p>Direct intros to the Studex Global Markets network. Investors, partners, and buyers across South Africa, Nigeria, Egypt, UAE, and Russia. One warm intro per quarter, guaranteed.</p>
+        <p>Direct intros to the Studex Global Markets network. Warm introductions to investors and buyers, subject to fit and availability.</p>
       </div>
     </div>
   </section>
@@ -306,10 +319,10 @@
         <div class="value">R15,000</div>
         <div class="unit">/ month · 40 hrs/week</div>
       </div>
-      <div class="vs-divider">vs.</div>
+      <div class="vs-divider" aria-hidden="true">vs.</div>
       <div class="vs-col bot">
         <div class="label">Stud-Bot</div>
-        <div class="value">R2,599</div>
+        <div class="value">{{STUDBOT_MONTHLY_PRICE}}</div>
         <div class="unit">/ month · 168 hrs/week</div>
       </div>
     </div>
@@ -317,20 +330,23 @@
 
   <section class="quote">
     <blockquote>"They're bribing me with biltong. It's working."</blockquote>
-    <cite>Founding member · Sandton</cite>
+    <cite>Illustrative quote — replace with a real, consented testimonial before launch</cite>
   </section>
 
   <section class="final-cta">
     <h2>Founding pricing capped at 100 clients.</h2>
-    <p>57 signed. 43 slots left. Locked-in R2,599 for life.</p>
+    <p>Founding-member pricing of {{STUDBOT_MONTHLY_PRICE}} for the first 100 clients.</p>
     <a class="cta-primary" href="https://wa.me/27794988737?text=LOCK">Lock Your Slot</a>
   </section>
+
+  </main>
 
   <footer>
     STUDEX GROUP (Pty) Ltd &nbsp;·&nbsp;
     <a href="mailto:sales@studex-group.com">sales@studex-group.com</a> &nbsp;·&nbsp;
     <a href="https://wa.me/27794988737">+27 79 498 8737</a> &nbsp;·&nbsp;
-    FNB Woodmead
+    <a href="privacy.html">Privacy (POPIA)</a> &nbsp;·&nbsp;
+    <a href="terms.html">Terms</a>
   </footer>
 </div>
 </body>

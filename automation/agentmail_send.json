@@ -6,7 +6,7 @@
     "reply_to": "sales@studex-group.com"
   },
   "compliance": {
-    "unsubscribe_footer": "Reply STOP to unsubscribe. Studex Group (Pty) Ltd, FNB Woodmead, Johannesburg, ZA.",
+    "unsubscribe_footer": "Reply STOP to unsubscribe. Studex Group (Pty) Ltd, Johannesburg, ZA.",
     "physical_address": "Studex Group (Pty) Ltd, Woodmead, Johannesburg, South Africa",
     "popia": "consent tracked in DenchClaw CRM"
   },
@@ -40,7 +40,7 @@
     {
       "email_id": "sb-email-03-math",
       "day": 4,
-      "subject": "Your staff costs R15,000/mo. Stud-Bot costs R2,599.",
+      "subject": "Your staff costs R15,000/mo. Stud-Bot costs {{STUDBOT_MONTHLY_PRICE}}.",
       "body_file": "copy/email-cold-outreach.md#email-3--day-4-cost-comparison",
       "cta": "Reply STUD-BOT",
       "skip_if_replied": true
@@ -56,7 +56,7 @@
     {
       "email_id": "sb-email-05-urgency",
       "day": 10,
-      "subject": "Last 43 founding-member slots — locked at R2,599",
+      "subject": "Last 43 founding-member slots — locked at {{STUDBOT_MONTHLY_PRICE}}",
       "body_file": "copy/email-cold-outreach.md#email-5--day-10-urgency",
       "cta": "Reply LOCK",
       "skip_if_replied": true
@@ -70,14 +70,8 @@
   },
   "invoicing": {
     "agent": "CashClaw",
-    "amount_zar": 2599,
-    "reference_pattern": "STUD-BOT-{client_id}",
-    "bank": {
-      "bank": "FNB Business",
-      "account_name": "Studex Group",
-      "account_number": "62760837610",
-      "branch": "250-655 Woodmead"
-    }
+    "amount_zar": "{{STUDBOT_MONTHLY_PRICE}}",
+    "reference_pattern": "STUD-BOT-{client_id}"
   },
   "approval_gate": {
     "required": true,
