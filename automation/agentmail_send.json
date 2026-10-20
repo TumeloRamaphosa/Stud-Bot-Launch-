@@ -14,7 +14,12 @@
     "source": "apify_google_maps_scrape",
     "batch_size": 200,
     "notes": "Round 1 target: SA SMBs — restaurants, retail, salons, tutoring in Sandton, CT, Durban, Pretoria",
-    "personalization_fields": ["first_name", "business_name", "industry", "city"]
+    "personalization_fields": [
+      "first_name",
+      "business_name",
+      "industry",
+      "city"
+    ]
   },
   "rate_limits": {
     "max_per_day_sender": 200,
@@ -65,19 +70,21 @@
   "reply_routing": {
     "primary_agent": "Hermes",
     "escalation_agent": "Katjana",
-    "escalation_triggers": ["intent_score > 0.7", "keyword: STUD-BOT", "keyword: LOCK", "keyword: DEMO", "keyword: buy", "keyword: pricing"],
+    "escalation_triggers": [
+      "intent_score > 0.7",
+      "keyword: STUD-BOT",
+      "keyword: LOCK",
+      "keyword: DEMO",
+      "keyword: buy",
+      "keyword: pricing"
+    ],
     "crm_sync": "DenchClaw"
   },
   "invoicing": {
     "agent": "CashClaw",
     "amount_zar": 2599,
     "reference_pattern": "STUD-BOT-{client_id}",
-    "bank": {
-      "bank": "FNB Business",
-      "account_name": "Studex Group",
-      "account_number": "62760837610",
-      "branch": "250-655 Woodmead"
-    }
+    "payment": "Payment via the Shopify payment link only. No bank details are published."
   },
   "approval_gate": {
     "required": true,

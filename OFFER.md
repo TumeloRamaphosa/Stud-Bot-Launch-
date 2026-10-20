@@ -56,4 +56,4 @@ First 100 clients only at R2,599. After that: R3,250/month.
 
 ### Invoicing
 
-Katjana (CashClaw) sends R2,599 invoice on signup. Payment to FNB Business, Studex Group, 62760837610, branch 250-655 Woodmead. Reference: `STUD-BOT-{client_id}`.
+Katjana (CashClaw) sends R2,599 invoice on signup. Payment goes through the Shopify payment link. No bank details are published here.
