@@ -17,17 +17,17 @@ Personalization variables:
 ```
 Hi {first_name},
 
-Studex just launched Stud-Bot. R2,599/month gets {business_name} three things:
+Studex just launched Stud-Bot. {{STUDBOT_MONTHLY_PRICE}}/month gets {business_name} three things:
 
 1. An AI agent on your WhatsApp. Handles queries 24/7, remembers every
    customer, closes sales while you sleep. Deploys in 48 hours.
-2. 1kg Studex Wagyu biltong. Halaal-certified, Mandela Boxing Cup partner
+2. 1kg Studex Wagyu biltong.
    brand. Delivered monthly to your door.
 3. Studex Global Markets access. Direct intros to our investor, partner,
    and buyer network across SA, Nigeria, Egypt, UAE, and Russia.
 
 One digital co-founder. One taste of Studex Meat. One passport into the
-network. R2,599/month.
+network. {{STUDBOT_MONTHLY_PRICE}}/month.
 
 Reply "STUD-BOT" and we deploy your agent this week.
 
@@ -55,7 +55,7 @@ They deployed Stud-Bot. Seven days later:
 - 14 after-hours orders captured
 - 21 hours/week freed up
 
-Cost: R2,599/month. Plus 1kg Wagyu biltong shipped to the owner every month.
+Cost: {{STUDBOT_MONTHLY_PRICE}}/month. Plus 1kg Wagyu biltong shipped to the owner every month.
 Plus intros to Studex partners across 3 continents.
 
 Want the same setup for {business_name}? Reply "DEMO" and I'll show you
@@ -68,7 +68,7 @@ Katjana
 
 ## Email 3 — Day 4 (Cost comparison)
 
-**Subject:** `Your staff costs R15,000/mo. Stud-Bot costs R2,599.`
+**Subject:** `Your staff costs R15,000/mo. Stud-Bot costs {{STUDBOT_MONTHLY_PRICE}}.`
 
 ```
 Hi {first_name},
@@ -78,7 +78,7 @@ Let's talk numbers.
 Human employee: R15,000/month + UIF + pension + leave + sick days + 
 3 months to onboard + still asks for a raise.
 
-Stud-Bot: R2,599/month. No UIF. No pension. No leave. No training. 
+Stud-Bot: {{STUDBOT_MONTHLY_PRICE}}/month. No UIF. No pension. No leave. No training. 
 Deployed in 48 hours. Works 168 hours/week. Gets smarter every day.
 
 Plus we ship you 1kg Studex Wagyu biltong every month. 
@@ -113,7 +113,7 @@ because they build relationships and close deals. Free them up.
 Stud-Bot handles the repetitive 80%. Your humans focus on the 20% that
 actually matters.
 
-Result: happier staff, faster service, R12,401/month saved vs a new hire,
+Result: happier staff, faster service, a fraction of the cost of a new hire,
 Wagyu biltong at your door, and a passport into 3 continents of partners.
 
 Reply "AGENT" and I'll show you how it works for {business_name}.
@@ -125,7 +125,7 @@ Katjana
 
 ## Email 5 — Day 10 (Urgency)
 
-**Subject:** `Last 43 founding-member slots — locked at R2,599`
+**Subject:** `Last 43 founding-member slots — locked at {{STUDBOT_MONTHLY_PRICE}}`
 
 ```
 Hi {first_name},
@@ -133,7 +133,7 @@ Hi {first_name},
 We're capping founding-member pricing at 100 clients. 57 signed up.
 
 What you lock in permanently at founding rate:
-- R2,599/month Stud-Bot (regular: R3,250)
+- {{STUDBOT_MONTHLY_PRICE}}/month Stud-Bot (regular: {{STUDBOT_MONTHLY_PRICE}})
 - 1kg Studex Wagyu biltong every month (worth R1,200 retail)
 - Studex Global Markets network access (Aspire tier included)
 - Free onboarding (worth R5,000)
@@ -151,6 +151,6 @@ WhatsApp: +27 79 498 8737
 sales@studex-group.com
 
 ---
-Studex Group (Pty) Ltd | FNB Woodmead
+Studex Group (Pty) Ltd | {{PHYSICAL_ADDRESS}}
 Unsubscribe: reply STOP
 ```

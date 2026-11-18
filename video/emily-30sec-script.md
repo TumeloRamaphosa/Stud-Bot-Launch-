@@ -19,12 +19,12 @@ Aspect: 9:16 vertical for IG Reels / TikTok / YT Shorts.
   (Studex gold logo). Three customer messages incoming, Stud-Bot replies
   visible.
 - **VO:** "Because I subscribed to an AI."
-- **Text overlay:** `STUD-BOT — R2,599/mo`
+- **Text overlay:** `STUD-BOT — {{STUDBOT_MONTHLY_PRICE}}/mo`
 
 ### 0:06-0:12 — The bundle
 - **Visual:** Split-screen. Left: Emily unpacking biltong bag on kitchen
   marble. Right: WhatsApp Stud-Bot handling three queries simultaneously.
-- **VO:** "R2,599 a month. AI runs my WhatsApp. Studex sends me a kilo of
+- **VO:** "{{STUDBOT_MONTHLY_PRICE}} a month. AI runs my WhatsApp. Studex sends me a kilo of
   Wagyu every month."
 
 ### 0:12-0:18 — Global network
@@ -41,7 +41,7 @@ Aspect: 9:16 vertical for IG Reels / TikTok / YT Shorts.
 ### 0:22-0:28 — The stamp
 - **Visual:** Bold text card, obsidian black background.
   Line 1 (Bebas Neue, large): `STUD-BOT`
-  Line 2 (Cormorant Garamond, medium): `R2,599 / month`
+  Line 2 (Cormorant Garamond, medium): `{{STUDBOT_MONTHLY_PRICE}} / month`
   Line 3 (Space Mono, small): `WhatsApp +27 79 498 8737`
 - **VO:** "Deploy in 48 hours."
 
@@ -75,7 +75,7 @@ Aspect: 9:16 vertical for IG Reels / TikTok / YT Shorts.
     {"t": 6, "d": 6, "prompt": "split screen: Emily unpacking wagyu biltong on white marble left, WhatsApp Stud-Bot handling 3 queries right"},
     {"t": 12, "d": 6, "prompt": "animated world map SA-NG-EG-UAE-RU with gold connection lines pulsing between them, obsidian black background"},
     {"t": 18, "d": 4, "prompt": "Emily van Dewild takes bite of biltong, slow half-smile to camera, editorial lighting"},
-    {"t": 22, "d": 6, "prompt": "bold text card obsidian black: STUD-BOT in Bebas Neue, R2599/month in Cormorant, WhatsApp number in Space Mono, Studex gold accents"},
+    {"t": 22, "d": 6, "prompt": "bold text card obsidian black: STUD-BOT in Bebas Neue, {{STUDBOT_MONTHLY_PRICE}}/month in Cormorant, WhatsApp number in Space Mono, Studex gold accents"},
     {"t": 28, "d": 2, "prompt": "Studex obsidian-gold logo fade in centered on black"}
   ],
   "voice": {

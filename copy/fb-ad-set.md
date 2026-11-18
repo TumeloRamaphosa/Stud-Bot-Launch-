@@ -9,7 +9,7 @@ Objective: **Messages** (send to WhatsApp)
 
 ```
 Your competitor just hired a R15,000/month employee.
-You just hired Stud-Bot for R2,599.
+You just hired Stud-Bot for {{STUDBOT_MONTHLY_PRICE}}.
 
 Stud-Bot handles your WhatsApp 24/7, remembers every customer, and ships
 you 1kg of Wagyu biltong every month.
@@ -23,7 +23,7 @@ Deploy in 48 hours. No app. Just WhatsApp.
 ```
 
 ## Headline
-`R2,599/mo: AI agent + Wagyu biltong + global network`
+`{{STUDBOT_MONTHLY_PRICE}}/mo: AI agent + Wagyu biltong + global network`
 
 ## Description
 `The only AI subscription that ships you meat.`
@@ -105,7 +105,7 @@ Exclude: Audience Network (low quality for B2B)
 - WhatsApp message rate > 3%
 - Lead-to-sale conversion > 8%
 - Target CAC: < R750/lead, target CPA (paid sale): < R2,500
-- Payback period: < 30 days (single R2,599 payment = paid back)
+- Payback period: < 30 days (single {{STUDBOT_MONTHLY_PRICE}} payment = paid back)
 
 ---
 
@@ -116,7 +116,7 @@ Hero: biltong + WhatsApp phone
 Primary text: as above (self-aware "bribing with biltong")
 
 ### Variant B: The Math
-Hero: split-screen R15,000 employee vs R2,599 Stud-Bot
+Hero: split-screen R15,000 employee vs {{STUDBOT_MONTHLY_PRICE}} Stud-Bot
 Primary text: cost comparison lead
 
 ### Variant C: The Vision

@@ -1,6 +1,6 @@
 # Stud-Bot Launch
 
-Campaign kit for **Stud-Bot** — Studex Super Agents' R2,599/month bundle.
+Campaign kit for **Stud-Bot** — Studex Super Agents' {{STUDBOT_MONTHLY_PRICE}}/month bundle.
 
 **One AI agent on WhatsApp + 1kg Studex Wagyu biltong monthly + Studex Global Markets access.**
 
@@ -39,7 +39,7 @@ fulfillment/
 | Item | Value |
 |---|---|
 | **SKU** | Stud-Bot |
-| **Price** | R2,599/month |
+| **Price** | {{STUDBOT_MONTHLY_PRICE}}/month |
 | **Included** | 1 AI agent on WhatsApp (24/7) + 1kg Studex Wagyu biltong monthly + Studex Global Markets network access |
 | **Deploy** | 48 hours |
 | **Sales channel** | WhatsApp +27 79 498 8737, sales@studex-group.com |

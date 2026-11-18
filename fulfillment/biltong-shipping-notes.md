@@ -2,7 +2,7 @@
 
 ## What we're promising
 
-Every Stud-Bot subscriber receives **1kg Studex Wagyu biltong** shipped to their address, once per month, for as long as their R2,599/month subscription is active.
+Every Stud-Bot subscriber receives **1kg Studex Wagyu biltong** shipped to their address, once per month, for as long as their {{STUDBOT_MONTHLY_PRICE}}/month subscription is active.
 
 ## Supply
 
@@ -51,7 +51,7 @@ Every Stud-Bot subscriber receives **1kg Studex Wagyu biltong** shipped to their
 | Stud-Bot agent inference (Qwen/DeepSeek via LiteLLM) | ~R150-300/month/client |
 | Global Markets ops (founder time amortized) | R200/month/client |
 | **Total variable cost/client/month** | **~R1,285** |
-| **Revenue** | R2,599 |
+| **Revenue** | {{STUDBOT_MONTHLY_PRICE}} |
 | **Gross margin** | ~50% (R1,314/client/month) |
 
 ## First 50 clients: manual fulfillment
