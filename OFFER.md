@@ -54,3 +54,4 @@ First 100 clients only at {{STUDBOT_MONTHLY_PRICE}}. After that: {{STUDBOT_MONTH
 
 ### Invoicing
 
+Katjana (CashClaw) sends a {{STUDBOT_MONTHLY_PRICE}} invoice on signup. Payment goes through the Shopify payment link. No bank details are published here.
